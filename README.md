@@ -8,4 +8,6 @@
 
 - swagger-jsdoc: to integrate Swagger using jsDoc comments in your code
 
-- swagger-ui-express: llows you to serve auto-generated swagger-ui generating API docs from express
+- swagger-ui-express: allows you to serve auto-generated swagger-ui generating API docs from express
+
+- cors: middleware that can be used to enable CORS with various options
