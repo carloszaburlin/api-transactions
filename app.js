@@ -1,26 +1,20 @@
 require("./config");
 
-const express = require('express');
-const app = express()
+const express = require("express");
+const app = express();
 const cors = require("cors");
-const PORT = process.env.PORT
-
-// Swagger Docs
-const swaggerDocs = require("./swagger_config");
-// Swagger User Interface
-const swaggerUi = require("swagger-ui-express");
+const PORT = process.env.PORT;
 
 app.use(cors());
 app.use(
   express.urlencoded({
-    extended: false
+    extended: false,
   })
 );
 app.use(express.json());
 
-app.use("/api-docs", swaggerUi.serve, swaggerUi.setup(swaggerDocs));
-app.use(require("./api/example/example.route"));
+app.use(require("./api/transaction/transaction.route"));
 
 app.listen(PORT, () => {
-  console.log(`Server listening on port ${PORT}`)
-})
+  console.log(`Server listening on port ${PORT}`);
+});

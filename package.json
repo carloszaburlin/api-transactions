@@ -1,5 +1,5 @@
 {
-  "name": "node-project-template",
+  "name": "api-transactions",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "http://EXC74260@tapias.claro.amx:7990/scm/~exc74260/node-project-template.git"
+    "url": ""
   },
   "keywords": [],
   "author": "",
@@ -17,8 +17,7 @@
   "dependencies": {
     "cors": "^2.8.5",
     "express": "^4.17.1",
-    "oracledb": "^5.0.0",
-    "swagger-jsdoc": "^5.0.1",
-    "swagger-ui-express": "^4.1.4"
+    "memorystorage": "^0.12.0",
+    "nodemon": "^2.0.7"
   }
 }
